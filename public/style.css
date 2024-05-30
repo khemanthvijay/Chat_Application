@@ -1,0 +1,29 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+}
+#chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#group-form, #chat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#messages {
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#message-input {
+    margin-bottom: 10px;
+}

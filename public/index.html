@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Welcome To Chat Application</h2>
+    <div id="chat-container">
+        <div id="user-details">
+            <input type="text" id="username" placeholder="Enter your name">
+        </div>
+        <button id="join-group">Join Group</button>
+        <div id="join-group-form" style="display: none;">
+            <input type="text" id="join-group-id" placeholder="Group ID">
+            <input type="password" id="join-group-password" placeholder="Password">
+            <button id="join-group-submit">Join</button>
+        </div>
+        <button id="create-group">Create Group</button>
+        <div id="create-group-form" style="display: none;">
+            <input type="text" id="custom-group-id" placeholder="Enter Custom Group ID (Optional)">
+            <div style="display: flex;">
+            <p>Your Group ID: <span id="group-id-text"></span></p>
+            </div>
+            <input type="password" id="new-group-password" placeholder="Set Group Password">
+            <button id="create-group-button">Create</button>
+        </div>
+        <div id="chat-box" style="display:none;">
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
